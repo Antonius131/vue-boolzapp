@@ -54,6 +54,7 @@
                   <div class="row">
                      <div class="col-12 d-flex align-items-center border-bottom"
                           v-for="(element, index) in contacts"
+                          :class="{'active' : index === activeChat}"
                         >
                         <div class="p-2">
                            <img :src="avatarPath(index)" class="rounded-circle pro-pic" alt="pro-pic">
