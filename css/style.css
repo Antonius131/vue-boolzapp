@@ -41,7 +41,7 @@ body {
 /* NAV MENU - user box */
 
 .pro-pic {
-   height: 45px;
+   height: 40px;
 }
 
 
@@ -55,11 +55,14 @@ body {
    padding: .75rem;
  }
 
-#notifications p {
+#notifications p,
+.chat-data h6,
+.chat-data p {
    margin-bottom: 0;
 }
 
-#notifications a {
+#notifications a,
+.chat-data p {
    color: rgba(33,33,33,.5);
 }
 
@@ -77,6 +80,10 @@ input.form-control {
    border-radius: 0;
 }
 
-input.form-control {
+input.form-control,
+.chat-data p {
    font-size: .75rem
 }
+
+
+/* NAV MENU - chat list */
