@@ -99,6 +99,9 @@ input.form-control,
    background-color: #E9EBEB;
 }
 
+.chat-element {
+   border-bottom: 1px solid #F5F5F5;
+}
 
 
 /**********************
