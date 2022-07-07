@@ -23,10 +23,6 @@ body {
    left: calc(50% - 40%);
 }
 
-#user-box {
-   background-color: #EAEAEA;
-}
-
 #notifications {
    background-color: #8EDAFC;
    font-size: .75rem;
@@ -37,13 +33,22 @@ body {
 }
 
 
+/* NAV MENU */
+
+#nav-menu {
+   height: 100%;
+}
+
 
 /* NAV MENU - user box */
+
+.user-box {
+   background-color: #EAEAEA;
+}
 
 .pro-pic {
    height: 40px;
 }
-
 
 
 /* NAV MENU - notifications */
@@ -85,5 +90,3 @@ input.form-control,
    font-size: .75rem
 }
 
-
-/* NAV MENU - chat list */

@@ -19,8 +19,8 @@
    <div class="b-line"></div>
    <div id="root" class="container">
       <div class="row">
-         <nav id="nav-menu" class="col-4">
-            <div id="user-box" class="row py-2">
+         <nav id="nav-menu" class="col-4 border-end">
+            <div class="row user-box py-2">
                <div class="col-2">
                   <img src="img/avatar_io.jpg" class="rounded-circle pro-pic" alt="pro-pic">
                </div>
@@ -51,12 +51,12 @@
             </div>
             <div id="chat-list" class="row">
                <div class="col-12">
-                  <div class="row py-2 bg-dark border-bottom">
+                  <div class="row py-2 border-bottom">
                      <div class="col-12 d-flex align-items-center">
                         <div class="p-1">
                            <img src="img/avatar_1.jpg" class="rounded-circle pro-pic" alt="pro-pic">
                         </div>
-                        <div class="p-1 chat-data">
+                        <div class="p-2 chat-data">
                            <h6>Michele</h6>
                            <p>Ultimo messaggio inviato</p>
                         </div>
@@ -66,7 +66,26 @@
             </div>
          </nav>
          <div id="main-chat" class="col-8">
-            <div class="row"></div>
+            <div class="row user-box py-2">
+               <div class="col-9">
+                  <div class="row">
+                     <div class="col-12 d-flex align-items-center">
+                        <div class="px-1">
+                           <img src="img/avatar_1.jpg" class="rounded-circle pro-pic" alt="pro-pic">
+                        </div>
+                        <div class="px-2 chat-data">
+                           <h6>Michele</h6>
+                           <p>Ultimo accesso oggi alle 12:00</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-3 d-flex justify-content-end align-items-center">
+                  <i class="fa-solid fa-magnifying-glass px-2"></i>
+                  <i class="fa-solid fa-paperclip px-2"></i>
+                  <i class="fa-solid fa-ellipsis-vertical px-2"></i>
+               </div>
+            </div>
             <div class="row"></div>
             <div class="row"></div>
          </div>
