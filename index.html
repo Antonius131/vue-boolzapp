@@ -51,13 +51,15 @@
             </div>
             <div id="chat-list" class="row">
                <div class="col-12">
-                  <div class="row py-2 border-bottom">
-                     <div class="col-12 d-flex align-items-center">
-                        <div class="p-1">
-                           <img src="img/avatar_1.jpg" class="rounded-circle pro-pic" alt="pro-pic">
+                  <div class="row">
+                     <div class="col-12 d-flex align-items-center border-bottom"
+                          v-for="(element, index) in contacts"
+                        >
+                        <div class="p-2">
+                           <img :src="avatarPath(index)" class="rounded-circle pro-pic" alt="pro-pic">
                         </div>
                         <div class="p-2 chat-data">
-                           <h6>Michele</h6>
+                           <h6>{{ element.name }}</h6>
                            <p>Ultimo messaggio inviato</p>
                         </div>
                      </div>
