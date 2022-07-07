@@ -21,3 +21,11 @@ body {
    top: calc(50% - 45%);
    left: calc(50% - 40%);
 }
+
+#user-box {
+   background-color: #EAEAEA;
+}
+
+.fa-solid {
+   color: #B1B1B1;
+}
