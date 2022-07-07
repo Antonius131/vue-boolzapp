@@ -2,6 +2,7 @@ body {
    height: 100vh;
    width: 100vw;
    color: #212121;
+   font-size: .75rem;
 }
 
 .g-line {
@@ -25,7 +26,6 @@ body {
 
 #notifications {
    background-color: #8EDAFC;
-   font-size: .75rem;
 }
 
 .fa-solid {
@@ -90,3 +90,31 @@ input.form-control,
    font-size: .75rem
 }
 
+
+
+
+/**********************
+      MAIN CHAT
+**********************/
+
+#msg-list {
+   background-image: url('../img/mine.jpg');
+   background-repeat: repeat;
+}
+
+
+
+/* MAIN CHAT - msg-list*/
+
+.sent-msg,
+.received-msg {
+   border-radius: 10px;
+}
+
+.sent-msg {
+   background-color: #baf9c1;
+}
+
+.received-msg {
+   background-color: #FFF;
+}
