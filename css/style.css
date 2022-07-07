@@ -37,6 +37,7 @@ body {
 }
 
 
+
 /* NAV MENU - user box */
 
 .pro-pic {
@@ -44,10 +45,11 @@ body {
 }
 
 
+
 /* NAV MENU - notifications */
 
 .fa-solid.fa-bell-slash.rounded-circle {
-   background-color: #fff;
+   background-color: #FFF;
    color: #8EDAFC;
    font-size: 1rem;
    padding: .75rem;
@@ -59,4 +61,22 @@ body {
 
 #notifications a {
    color: rgba(33,33,33,.5);
+}
+
+
+
+/* NAV MENU - search input */
+
+#user-input {
+   background-color: #FAFAFA;
+}
+
+#search-button,
+input.form-control {
+   border: 1px solid #F2F2F2;
+   border-radius: 0;
+}
+
+input.form-control {
+   font-size: .75rem
 }
