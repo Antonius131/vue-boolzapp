@@ -1,0 +1,24 @@
+body {
+   height: 100vh;
+   width: 100vw;
+   position: relative;
+}
+
+.g-line {
+   background-color: #018a7d;
+   height: 15%;
+}
+
+.b-line {
+   background-color: #f0eddf;
+   height: 85%;
+}
+
+#root {
+   height: 90%;
+   width: 80%;
+   background-color: #fff;
+   position: absolute;
+   top: calc(50% - 45%);
+   left: calc(50% - 40%);
+}
