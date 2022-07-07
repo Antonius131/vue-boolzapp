@@ -16,7 +16,6 @@ body {
 }
 
 #root {
-   height: 90%;
    width: 80%;
    background-color: #fff;
    position: absolute;
@@ -35,14 +34,17 @@ body {
 
 /* NAV MENU */
 
-#nav-menu {
-   height: 100%;
+#root,
+#nav-menu,
+#main-chat {
+   height: 700px;
 }
 
 
 /* NAV MENU - user box */
 
 .user-box {
+   height: 56px;
    background-color: #EAEAEA;
 }
 
@@ -98,6 +100,7 @@ input.form-control,
 **********************/
 
 #msg-list {
+   height: calc(100% - 112px);
    background-image: url('../img/mine.jpg');
    background-repeat: repeat;
 }
@@ -123,6 +126,7 @@ input.form-control,
 
 
 #chat-controls {
+   height: 56px;
    background-color: #F3EEEA;
 }
 
