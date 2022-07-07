@@ -103,7 +103,6 @@ input.form-control,
 }
 
 
-
 /* MAIN CHAT - msg-list*/
 
 .sent-msg,
@@ -117,4 +116,16 @@ input.form-control,
 
 .received-msg {
    background-color: #FFF;
+}
+
+
+/* MAIN CHAT - chat-controls*/
+
+
+#chat-controls {
+   background-color: #F3EEEA;
+}
+
+.form-control.chat-input {
+   border-radius: 5px;
 }
