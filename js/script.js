@@ -1,10 +1,10 @@
 const app = new Vue (
    {
-      el: '#root',
-      data: {
-         activeChat: 0,
-         inputMsg: '',
-         contacts: [
+        el: '#root',
+        data: {
+            activeChat: 0,
+            inputMsg: '',
+            contacts: [
             {
                 name: 'Michele',
                 avatar: '_1',
@@ -165,32 +165,49 @@ const app = new Vue (
                         status: 'received'
                     }
                 ],
-            }
-        ]
-      },
-      methods: {
-        avatarPath(index) {
-            return './img/avatar' + this.contacts[index].avatar + '.jpg';
+                }
+            ]
         },
 
-        setActiveChat(index) {
-            this.activeChat = index;
+        methods: {
+            avatarPath(index) {
+                return './img/avatar' + this.contacts[index].avatar + '.jpg';
+            },
+
+            setActiveChat(index) {
+                this.activeChat = index;
+            },
+
+            newMsg() {
+                if (this.inputMsg === '') {
+                    return
+                }
+                const contacts = this.contacts;
+                const activeChat = this.activeChat;
+                const newObject = {
+                    date: '',
+                    message: this.inputMsg,
+                    status: 'sent'
+                }
+                contacts[activeChat].messages.push(newObject);
+                this.inputMsg = '';
+            },
+
+            newAnswer() {
+                const contacts = this.contacts;
+                const activeChat = this.activeChat;
+                    const newObject = {
+                        date: '',
+                        message: "Anche tu mi manchi gioia :')",
+                        status: 'received'
+                    }
+
+                contacts[activeChat].messages.push(newObject);
+            }
         },
 
-        newMsg() {
-            if (this.inputMsg === '') {
-                return
-            }
-            const contacts = this.contacts;
-            const activeChat = this.activeChat;
-            const newObject = {
-                date: '',
-                message: this.inputMsg,
-                status: 'sent'
-            }
-            contacts[activeChat].messages.push(newObject);
-            this.inputMsg = '';
+        updated() {
+            
         }
-      }
-   }
+    }
 )
