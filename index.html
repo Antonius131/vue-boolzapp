@@ -56,18 +56,19 @@
             </div>
             <div id="chat-list" class="row">
                <div class="col-12">
-                  <div class="row">
-                     <div class="col-12 d-flex align-items-center chat-element"
-                          v-for="(element, index) in contacts"
-                          :class="{'active' : index === activeChat}"
-                        >
-                        <div class="p-2">
-                           <img :src="avatarPath(index)" class="rounded-circle pro-pic" alt="pro-pic">
-                        </div>
-                        <div class="p-2 chat-data">
-                           <h6>{{ element.name }}</h6>
-                           <p>Ultimo messaggio inviato</p>
-                        </div>
+                  <div class="row py-2 d-flex align-items-center chat-element"
+                        v-for="(element, index) in contacts"
+                        :class="{'active' : index === activeChat}"
+                     >
+                     <div class="col-2">
+                        <img :src="avatarPath(index)" class="rounded-circle pro-pic" alt="pro-pic">
+                     </div>
+                     <div class="col-8 chat-data">
+                        <h6>{{ element.name }}</h6>
+                        <p>Ultimo messaggio inviato</p>
+                     </div>
+                     <div class="col-2 msg-data">
+                        <p>12:00</p>
                      </div>
                   </div>
                </div>

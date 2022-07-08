@@ -107,6 +107,14 @@ input.form-control,
    border-bottom: 1px solid #F5F5F5;
 }
 
+.msg-data {
+   font-size: .5rem;
+   color: rgba(0,0,0,.3);
+   text-align: right;
+}
+
+
+
 
 /**********************
       MAIN CHAT
