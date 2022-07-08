@@ -3,6 +3,7 @@ const app = new Vue (
       el: '#root',
       data: {
          activeChat: 0,
+         inputMsg: '',
          contacts: [
             {
                 name: 'Michele',
@@ -165,7 +166,7 @@ const app = new Vue (
                     }
                 ],
             }
-         ],
+        ]
       },
       methods: {
         avatarPath(index) {
