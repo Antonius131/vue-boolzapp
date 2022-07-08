@@ -98,21 +98,11 @@
             </div>
             <div id="msg-list" class="row p-5">
                <div class="col-12">
-                  <div class="row py-1 d-flex">
-                     <div class="col-5 message sent-msg">
-                        <p>Hai portato a spasso il cane?</p>
-                        <p class="msg-data">12:00</p>
-                     </div>
-                  </div>
-                  <div class="row py-1 d-flex">
-                     <div class="col-5 message sent-msg">
-                        <p>Ricordati di stendere i panni</p>
-                        <p class="msg-data">12:00</p>
-                     </div>
-                  </div>
-                  <div class="row py-1">
-                     <div class="col-5 message received-msg">
-                        <p>Tutto fatto</p>
+                  <div class="row"
+                       v-for="(element, index) in contacts[activeChat].messages"
+                       >
+                     <div class="col-5 message sent-msg mb-1">
+                        <p>{{ element.message }}</p>
                         <p class="msg-data">12:00</p>
                      </div>
                   </div>
