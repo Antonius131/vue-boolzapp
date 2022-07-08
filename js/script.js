@@ -178,6 +178,9 @@ const app = new Vue (
         },
 
         newMsg() {
+            if (this.inputMsg === '') {
+                return
+            }
             const contacts = this.contacts;
             const activeChat = this.activeChat;
             const newObject = {
