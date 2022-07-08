@@ -101,6 +101,11 @@ input.form-control,
 
 .chat-element {
    border-bottom: 1px solid #F5F5F5;
+   cursor: pointer;
+}
+
+.chat-element:hover {
+   background-color: #fbfbfb;
 }
 
 .msg-data {
