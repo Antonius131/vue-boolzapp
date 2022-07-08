@@ -175,6 +175,18 @@ const app = new Vue (
 
         setActiveChat(index) {
             this.activeChat = index;
+        },
+
+        newMsg() {
+            const contacts = this.contacts;
+            const activeChat = this.activeChat;
+            const newObject = {
+                date: '',
+                message: this.inputMsg,
+                status: 'sent'
+            }
+            contacts[activeChat].messages.push(newObject);
+            this.inputMsg = '';
         }
       }
    }
