@@ -98,13 +98,16 @@
             </div>
             <div id="msg-list" class="row p-5">
                <div class="col-12">
-                  <div class="row"
+                  <div class="row d-flex"
                        v-for="(element, index) in contacts[activeChat].messages"
-                       >
-                     <div class="col-5 message sent-msg mb-1">
+                       :class="{'justify-content-end' : element.status === 'sent'}"
+                  >
+                     <div class="col-5 message mb-2"
+                          :class="{'sent-msg' : element.status === 'sent'}"
+                     >
                         <p>{{ element.message }}</p>
                         <p class="msg-data">12:00</p>
-                     </div>
+                     </div><br>
                   </div>
                </div>
             </div>

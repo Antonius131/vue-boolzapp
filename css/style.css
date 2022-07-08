@@ -130,23 +130,18 @@ input.form-control,
 
 /* MAIN CHAT - msg-list*/
 
-.sent-msg,
-.received-msg {
-   border-radius: 10px;
-}
-
 .message {
+   background-color: #FFF;
    padding: .65rem;
+   border-radius: 8px;
 }
 
 .sent-msg {
    background-color: #baf9c1;
-   
 }
 
 .received-msg {
    background-color: #FFF;
-   
 }
 
 
