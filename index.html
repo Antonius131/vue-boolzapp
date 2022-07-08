@@ -59,6 +59,7 @@
                   <div class="row py-2 d-flex align-items-center chat-element"
                         v-for="(element, index) in contacts"
                         :class="{'active' : index === activeChat}"
+                        @click="setActiveChat(index)"
                      >
                      <div class="col-2">
                         <img :src="avatarPath(index)" class="rounded-circle pro-pic" alt="pro-pic">

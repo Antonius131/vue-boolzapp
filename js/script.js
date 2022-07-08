@@ -168,9 +168,13 @@ const app = new Vue (
          ],
       },
       methods: {
-         avatarPath(index) {
+        avatarPath(index) {
             return './img/avatar' + this.contacts[index].avatar + '.jpg';
-         }
+        },
+
+        setActiveChat(index) {
+            this.activeChat = index;
+        },
       }
    }
 )
