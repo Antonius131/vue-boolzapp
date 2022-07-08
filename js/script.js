@@ -191,6 +191,8 @@ const app = new Vue (
                 }
                 contacts[activeChat].messages.push(newObject);
                 this.inputMsg = '';
+
+                const answer = setTimeout(this.newAnswer, 1000);
             },
 
             newAnswer() {
@@ -198,16 +200,12 @@ const app = new Vue (
                 const activeChat = this.activeChat;
                     const newObject = {
                         date: '',
-                        message: "Anche tu mi manchi gioia :')",
+                        message: 'Ok',
                         status: 'received'
                     }
 
                 contacts[activeChat].messages.push(newObject);
             }
-        },
-
-        updated() {
-            
         }
     }
 )
