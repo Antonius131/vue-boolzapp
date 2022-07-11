@@ -198,7 +198,14 @@ const app = new Vue (
                 const messages = this.contacts[index].messages;
                 const lastMessage = messages[messages.length - 1];
 
-                return lastMessage.message
+                return lastMessage.message;
+            },
+
+            lastMessageDate(index) {
+                const messages = this.contacts[index].messages;
+                const lastMessage = messages[messages.length - 1];
+
+                return lastMessage.date;
             },
 
             newMsg() {
