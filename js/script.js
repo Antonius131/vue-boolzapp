@@ -4,6 +4,7 @@ const app = new Vue (
         data: {
             activeChat: 0,
             inputMsg: '',
+            inputSearch: '',
             contacts: [
             {
                 name: 'Michele',
@@ -176,6 +177,19 @@ const app = new Vue (
 
             setActiveChat(index) {
                 this.activeChat = index;
+            },
+
+            searchContact() {
+                for (let i=0; i<this.contacts.length; i++) {
+
+                    const lowerCaseSearch = this.inputSearch.toLowerCase();
+                    const lowerCaseName = this.contacts[i].name.toLowerCase();
+
+                    if (lowerCaseSearch === lowerCaseName) {
+                        alert('il contatto è presente');
+                    }
+                    
+                }
             },
 
             newMsg() {

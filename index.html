@@ -50,7 +50,7 @@
                <div class="col-12">
                   <div class="input-group">
                      <button class="btn btn-outline-secondary" type="button" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                     <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-describedby="search-button">
+                     <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-describedby="search-button" v-model="inputSearch" @keyup.enter="searchContact">
                   </div>
                </div>   
             </div>
