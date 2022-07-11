@@ -215,7 +215,7 @@ const app = new Vue (
                 const contacts = this.contacts;
                 const activeChat = this.activeChat;
                 const newObject = {
-                    date: '',
+                    date: moment().format('DD/MM/YYYY hh:mm:ss'),
                     message: this.inputMsg,
                     status: 'sent'
                 }
@@ -229,7 +229,7 @@ const app = new Vue (
                 const contacts = this.contacts;
                 const activeChat = this.activeChat;
                     const newObject = {
-                        date: '',
+                        date: moment().format('DD/MM/YYYY hh:mm:ss'),
                         message: 'Ok',
                         status: 'received'
                     }
