@@ -179,7 +179,7 @@ const app = new Vue (
             },
 
             newMsg() {
-                if (this.inputMsg === '') {
+                if (this.inputMsg === '') {
                     return
                 }
                 const contacts = this.contacts;
