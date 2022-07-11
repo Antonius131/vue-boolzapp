@@ -99,7 +99,7 @@
             </div>
             <div id="msg-list" class="row p-5">
                <div class="col-12">
-                  <div class="row d-flex"
+                  <div class="row"
                        v-for="(element, index) in contacts[activeChat].messages"
                        :class="{'justify-content-end' : element.status === 'sent'}"
                   >
@@ -108,7 +108,7 @@
                      >
                         <p>{{ element.message }}</p>
                         <p class="msg-data">12:00</p>
-                     </div><br>
+                     </div>
                   </div>
                </div>
             </div>
