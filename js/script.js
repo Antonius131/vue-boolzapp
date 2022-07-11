@@ -194,6 +194,13 @@ const app = new Vue (
                 }
             },
 
+            lastMessage(index) {
+                const messages = this.contacts[index].messages;
+                const lastMessage = messages[messages.length - 1];
+
+                return lastMessage.message
+            },
+
             newMsg() {
                 if (this.inputMsg === '') {
                     return
