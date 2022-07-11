@@ -185,8 +185,10 @@ const app = new Vue (
                     const lowerCaseSearch = this.inputSearch.toLowerCase();
                     const lowerCaseName = this.contacts[i].name.toLowerCase();
 
-                    if (lowerCaseSearch === lowerCaseName) {
-                        alert('il contatto è presente');
+                    if (lowerCaseName.includes(lowerCaseSearch)) {
+                        this.contacts[i].visible = true;
+                    } else {
+                        this.contacts[i].visible = false;
                     }
                     
                 }
