@@ -108,7 +108,7 @@
                   <div class="row"
                        v-for="(element, index) in contacts[activeChat].messages"
                        :class="{'justify-content-end' : element.status === 'sent'}">
-                     <div class="col-5 message mb-2"
+                     <div class="col-5 message mb-2 position-relative"
                           :class="{'sent-msg' : element.status === 'sent'}">
                         <p>{{ element.message }}</p>
                         <p class="msg-data">{{ element.date }}</p>

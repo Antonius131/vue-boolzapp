@@ -5,6 +5,10 @@ body {
    font-size: .75rem;
 }
 
+.dropdown-item {
+   font-size: .75rem;
+ }
+
 .g-line {
    background-color: #018a7d;
    height: 15%;
@@ -144,6 +148,20 @@ input.form-control,
    background-color: #FFF;
 }
 
+
+/* dropdown-menu */
+
+#msg-options {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+#dropdownMenuButton1 {
+   background-color: transparent;
+   border: none;
+   color: rgba(33,33,33,.4);
+}
 
 
 /* MAIN CHAT - chat-controls*/
