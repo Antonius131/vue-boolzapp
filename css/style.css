@@ -129,6 +129,7 @@ input.form-control,
    height: calc(100% - 112px);
    background-image: url('../img/mine.jpg');
    background-repeat: repeat;
+   overflow-y: auto;
 }
 
 
